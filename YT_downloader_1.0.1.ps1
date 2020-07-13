@@ -34,7 +34,11 @@ elseif ($setting -eq "CUSTOM")
 
     Write-Host ""
     Write-Host "Data Recieved! Downloading Data and Making you your video!" 
-    ./youtube-dl.exe --ffmpeg-location 'ffmpeg.exe' -f $vido"+"$audo  $link
+    if($link -eq ""){
+	    ./youtube-dl.exe --ffmpeg-location 'ffmpeg.exe' -f $vido"+"$audo 'https://www.youtube.com/watch?v=rprhfOBVgf8'
+    }else {
+	    ./youtube-dl.exe --ffmpeg-location 'ffmpeg.exe' -f $vido"+"$audo  $link
+    }
     }
 
 elseif($setting -eq "MUSIC")
@@ -52,4 +56,4 @@ else
     Write "NONSENSE-COMMANDS, ENDING PROGRAM"
 }
 
-Read-host "Enter to Exitî
+Read-host "Enter to Exit‚Äù
