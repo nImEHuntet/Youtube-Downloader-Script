@@ -10,6 +10,9 @@ You need to enable execution policy to run the script!
 - Step2: Enter the command below in the image. Voila! You are done.
 ![Powershell1](https://www.windowscentral.com/sites/wpcentral.com/files/styles/w830/public/field/image/2019/01/powershell-set-executionpolicy-windows-10.jpg)
 
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
 > You can safely run the script now.
 
 **NOTE2**
